@@ -1,0 +1,24 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.2.0",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "methods": [
+        "get"
+      ],
+      "authLevel": "function",
+      "name": "req"
+    },
+    {
+      "type": "blob",
+      "connection": "AzureWebJobsStorage",
+      "blobPath": "ct1/Busan.json",
+      "access": 1,
+      "name": "blobStream"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/MyFuncApp.dll",
+  "entryPoint": "ReadBlobFunction.Run"
+}
